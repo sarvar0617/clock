@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4c78a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.clock-bg {
+  background-color: #646e82;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+}
+.clock-bg .bg-circle {
+  width: 450px;
+  height: 450px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: #eef0f5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock-bg .bg-circle .clock-circle {
+  width: 400px;
+  height: 400px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background-color: #eef0f5;
+  border-radius: 50%;
+  position: relative;
+}
+.clock-bg .bg-circle .clock-circle .number {
+  position: absolute;
+  top: 46%;
+  left: 48%;
+  transform: rotate(calc(30deg * var(--i))) translate(-50%, -180px) rotate(calc(-30deg * var(--i)));
+  transform-origin: center;
+  color: rgb(93, 102, 109);
+  font-size: 30px;
+  font-family: "Arial", sans-serif;
+}
+.clock-bg .bg-circle .clock-circle .clock-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4c78a4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.clock-bg .bg-circle .clock-circle .hour,
+.clock-bg .bg-circle .clock-circle .min,
+.clock-bg .bg-circle .clock-circle .sec {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+}
+.clock-bg .bg-circle .clock-circle .hour {
+  width: 8px;
+  height: 80px;
+  background: #646e82;
+  transform: translate(-50%, -100%) rotate(0deg);
+  border-radius: 4px;
+}
+.clock-bg .bg-circle .clock-circle .min {
+  width: 6px;
+  height: 110px;
+  background: #646e82;
+  transform: translate(-50%, -100%) rotate(0deg);
+  border-radius: 3px;
+}
+.clock-bg .bg-circle .clock-circle .sec {
+  width: 3px;
+  height: 150px;
+  background: #e74c3c;
+  transform: translate(-50%, -100%) rotate(0deg);
+  border-radius: 2px;
+  position: relative;
+}/*# sourceMappingURL=main.css.map */
