@@ -52,4 +52,4 @@ let x = setInterval(function () {
     document.querySelector(".newYear").style.display = "block";
   }
 });
-//  timer ni sourse youtubedan olindi
+//  timer ni sourse youtubedan olindi + logikasi ham
